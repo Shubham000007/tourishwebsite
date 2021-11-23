@@ -153,9 +153,6 @@ textarea:focus-visible {
   padding: 0 1rem;
 }
 
-.nav__brand {
-  width: 50%;
-}
 
 .nav__brand img {
   width: 100%;
