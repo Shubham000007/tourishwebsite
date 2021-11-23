@@ -1,8 +1,8 @@
 /* import Fonts  */
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 /* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap");
 
 /* Box sizing rules */
 *,
@@ -108,8 +108,8 @@ textarea:focus-visible {
   --black: #000;
   --gray: #505050;
   --border-color: #e1e1e1;
-  --font-family-heading: 'Josefin Sans', sans-serif;
-  --font-family-satify: 'Satisfy', cursive;
+  --font-family-heading: "Josefin Sans", sans-serif;
+  --font-family-satify: "Satisfy", cursive;
   --font-family-para: "Poppins", sans-serif;
   --max-with: 1140px;
   --font-size: 16px;
@@ -138,7 +138,7 @@ textarea:focus-visible {
   content: "";
   width: 100%;
   height: 700px;
-  background: rgba(0, 0, 0, .4);
+  background: rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 0;
   left: 0;
@@ -269,13 +269,13 @@ textarea:focus-visible {
   box-sizing: border-box;
 }
 
-.package__type__container .col-3 {
+.package__type__container .col-sm-3 {
   padding: 0.8rem;
 }
 
-.package__type__container .col-3:nth-child(2),
-.package__type__container .col-3:nth-child(3),
-.package__type__container .col-3:nth-child(4) {
+.package__type__container .col-sm-3:nth-child(2),
+.package__type__container .col-sm-3:nth-child(3),
+.package__type__container .col-sm-3:nth-child(4) {
   border-left: 1px solid var(--border-color);
 }
 
@@ -334,7 +334,6 @@ textarea:focus-visible {
   object-position: top;
 }
 
-
 /* Indian Slider  */
 
 .indian,
@@ -349,6 +348,8 @@ textarea:focus-visible {
 
 .honeymoon {
   background: url("../image/background/back.jpg") top left;
+  position: relative;
+  z-index: 0;
   /* background: #f6f5f5; */
 }
 
@@ -361,7 +362,6 @@ textarea:focus-visible {
   color: var(--white);
 }
 
-
 .honeymoon::after {
   content: "";
   width: 100%;
@@ -372,7 +372,6 @@ textarea:focus-visible {
   left: 0;
   z-index: -1;
 }
-
 
 .slick-arrow {
   width: 45px;
@@ -423,8 +422,6 @@ textarea:focus-visible {
 }
 
 /* Pacakge Slider  Ends */
-
-
 
 /* BEst packages  */
 
@@ -484,7 +481,6 @@ textarea:focus-visible {
   box-shadow: var(--box-shadow);
 }
 
-
 .img__area img {
   width: 100%;
   height: auto;
@@ -534,7 +530,6 @@ textarea:focus-visible {
   box-sizing: border-box;
   border-top: 1px solid var(--border-color);
 }
-
 
 /* Footer  */
 
@@ -602,13 +597,13 @@ textarea:focus-visible {
   flex-direction: column;
 }
 
-.footer__address .col-3:nth-child(2),
-.footer__address .col-3:nth-child(3),
-.footer__address .col-3:nth-child(4) {
+.footer__address .col-sm-3:nth-child(2),
+.footer__address .col-sm-3:nth-child(3),
+.footer__address .col-sm-3:nth-child(4) {
   border-left: 1px solid var(--border-color);
 }
 
-.footer__address .col-3 .media {
+.footer__address .col-sm-3 .media {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -617,16 +612,16 @@ textarea:focus-visible {
   padding: 0.5rem;
 }
 
-.footer__address .col-3 .media svg {
+.footer__address .col-sm-3 .media svg {
   font-size: 2rem;
   margin: 0 auto;
 }
 
-.footer__address .col-3 .media .media-body {
+.footer__address .col-sm-3 .media .media-body {
   text-align: center;
 }
 
-.footer__address .col-3 .media .media-body h5 {
+.footer__address .col-sm-3 .media .media-body h5 {
   font-size: 0.9rem;
   font-family: var(--font-family-para);
 }
@@ -672,9 +667,9 @@ textarea:focus-visible {
   transform: scale(1.1, 1.1);
 }
 
-.pages__footer .col-3:nth-child(2),
-.pages__footer .col-3:nth-child(3),
-.pages__footer .col-3:nth-child(4) {
+.pages__footer .col-sm-3:nth-child(2),
+.pages__footer .col-sm-3:nth-child(3),
+.pages__footer .col-sm-3:nth-child(4) {
   border-left: 1px solid var(--border-color);
 }
 
@@ -725,8 +720,6 @@ textarea:focus-visible {
   }
 }
 
-
-
 @media (min-width: 1024px) {
   .containers {
     max-width: 968px !important;
@@ -755,7 +748,6 @@ textarea:focus-visible {
   .banner {
     height: 250px;
   }
-
 }
 
 @media (min-width: 1600px) {
