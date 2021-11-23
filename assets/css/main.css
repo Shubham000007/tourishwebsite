@@ -159,7 +159,7 @@ textarea:focus-visible {
 
 .nav__brand img {
   width: 100%;
-  max-width: 100px;
+  max-width: 120px;
   padding: 1rem 0;
 }
 
@@ -175,7 +175,7 @@ textarea:focus-visible {
 
 .banner {
   width: 100%;
-  height: 350px;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -726,9 +726,24 @@ textarea:focus-visible {
 }
 
 
+
+@media (min-width: 1024px) {
+  .containers {
+    max-width: 968px !important;
+  }
+
+  .banner {
+    height: 200px;
+  }
+}
+
 @media (min-width: 1366px) {
   .containers {
     max-width: 1200px !important;
+  }
+
+  .banner {
+    height: 250px;
   }
 }
 
@@ -736,6 +751,11 @@ textarea:focus-visible {
   .containers {
     max-width: 1300px !important;
   }
+
+  .banner {
+    height: 250px;
+  }
+
 }
 
 @media (min-width: 1600px) {
