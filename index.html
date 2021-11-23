@@ -1,335 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tourish Tour</title>
-    <link
-      rel="shortcut icon"
-      href="./assets/image/logo/logo.png"
-      type="image/x-icon"
-    />
-    <!-- Links  -->
-    <link rel="stylesheet" href="./assets/plugins/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./assets/plugins/css/slick.css" />
-    <link rel="stylesheet" href="./assets/plugins/fontawesome/css/all.css" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-  </head>
 
-  <body>
-    <!-- Navbar  -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tourish Tour</title>
+  <link rel="shortcut icon" href="./assets/image/logo/logo.png" type="image/x-icon" />
+  <!-- Links  -->
+  <link rel="stylesheet" href="./assets/plugins/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/plugins/css/slick.css" />
+  <link rel="stylesheet" href="./assets/plugins/fontawesome/css/all.css" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
 
-    <div class="header">
-      <nav class="navbar">
-        <!-- BRand Logo  -->
-        <div class="nav__brand">
-          <img src="./assets/image/logo/logo.png" alt="Brand Logo" />
-        </div>
-        <!-- BRand Logo Ends -->
-        <div class="nav__menu">
-          <a href="javascript:void(0)" class="text-white"> Blogs </a>
-          <a href="javascript:void(0)" class="btn btn-accent"
-            ><i class="fas fa-phone-alt"></i> Call Us
-          </a>
-        </div>
-      </nav>
+<body>
+  <!-- Navbar  -->
 
-      <!-- Banner  -->
-      <div class="banner">
-        <h4>Book Flights Tickets, Tour Packages, Hotels & Sightseeing</h4>
-        <div class="search-package-div row">
-          <div class="col-4">
-            <div class="form-group">
-              <select
-                name="package_type"
-                id="package_type"
-                class="form-control"
-              >
-                <option value="">Select Package Type</option>
-              </select>
-            </div>
+  <div class="header">
+    <nav class="navbar containers">
+      <!-- BRand Logo  -->
+      <div class="nav__brand">
+        <img src="./assets/image/logo/logo.png" alt="Brand Logo" />
+      </div>
+      <!-- BRand Logo Ends -->
+      <div class="nav__menu">
+        <a href="javascript:void(0)" class="text-white"> Blogs </a>
+        <a href="javascript:void(0)" class="btn btn-accent"><i class="fas fa-phone-alt"></i> Call Us
+        </a>
+      </div>
+    </nav>
+
+    <!-- Banner  -->
+    <div class="banner containers">
+      <h4>Book Flights Tickets, Tour Packages, Hotels & Sightseeing</h4>
+      <div class="search-package-div row">
+        <div class="col-4 search__type">
+          <div class="form-group">
+            <select name="package_type" id="package_type" class="form-control">
+              <option value="">Select Package Type</option>
+            </select>
           </div>
-          <div class="col-4">
-            <div class="form-group">
-              <select
-                name="package_destination"
-                id="package_destination"
-                class="form-control"
-              >
-                <option value="">Select Destination</option>
-              </select>
-            </div>
+        </div>
+        <div class="col-4 search__type">
+          <div class="form-group">
+            <select name="package_destination" id="package_destination" class="form-control">
+              <option value="">Select Destination</option>
+            </select>
           </div>
-          <div class="col-4 search-button">
-            <a href="javascript:void(0)">SEARCH</a>
+        </div>
+        <div class="col-4 search-button">
+          <a href="javascript:void(0)">SEARCH</a>
+        </div>
+      </div>
+    </div>
+    <!-- Banner  -->
+  </div>
+
+  <!-- Navbar  Ends -->
+
+  <!-- Package Type Container -->
+
+  <div class="package__type__container containers">
+    <div class="row">
+      <div class="col-3">
+        <div class="media">
+          <img class="mr-3" src="./assets/image/package/international.png" alt="International Package" />
+          <div class="media-body">
+            <h5 class="mt-0">International Packages</h5>
           </div>
         </div>
       </div>
-      <!-- Banner  -->
-    </div>
 
-    <!-- Navbar  Ends -->
-
-    <!-- Package Type Container -->
-
-    <div class="package__type__container">
-      <div class="row">
-        <div class="col-3">
-          <div class="media">
-            <img
-              class="mr-3"
-              src="./assets/image/package/international.png"
-              alt="International Package"
-            />
-            <div class="media-body">
-              <h5 class="mt-0">International Packages</h5>
-            </div>
+      <div class="col-3">
+        <div class="media">
+          <img class="mr-3" src="./assets/image/package/indian.png" alt="Indian Package" />
+          <div class="media-body">
+            <h5 class="mt-0">Indian Packages</h5>
           </div>
         </div>
+      </div>
 
-        <div class="col-3">
-          <div class="media">
-            <img
-              class="mr-3"
-              src="./assets/image/package/indian.png"
-              alt="Indian Package"
-            />
-            <div class="media-body">
-              <h5 class="mt-0">Indian Packages</h5>
-            </div>
+      <div class="col-3">
+        <div class="media">
+          <img class="mr-3" src="./assets/image/package/holiday.png" alt="Holiday Package" />
+          <div class="media-body">
+            <h5 class="mt-0">Holiday Packages</h5>
           </div>
         </div>
+      </div>
 
-        <div class="col-3">
-          <div class="media">
-            <img
-              class="mr-3"
-              src="./assets/image/package/holiday.png"
-              alt="Holiday Package"
-            />
-            <div class="media-body">
-              <h5 class="mt-0">Holiday Packages</h5>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-3">
-          <div class="media">
-            <img
-              class="mr-3"
-              src="./assets/image/package/honeymoon.png"
-              alt="Honeymoon Package"
-            />
-            <div class="media-body">
-              <h5 class="mt-0">Honeymoon Packages</h5>
-            </div>
+      <div class="col-3">
+        <div class="media">
+          <img class="mr-3" src="./assets/image/package/honeymoon.png" alt="Honeymoon Package" />
+          <div class="media-body">
+            <h5 class="mt-0">Honeymoon Packages</h5>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Package Type Container Ends -->
+  <!-- Package Type Container Ends -->
 
-    <!-- International Packages SLider  -->
-    <div class="packages_sliders International pack">
+  <!-- International Packages SLider  -->
+  <div class="packages_sliders International pack">
+    <div class="containers">
       <h4>International Packages</h4>
-      <div class="sliders">
-        <div class="slider_item">
-          <img src="./assets/image/others/img1.jpg" alt="" />
-        </div>
-        <div class="slider_item">
-          <img src="./assets/image/others/img2.jpg" alt="" />
-        </div>
-        <div class="slider_item">
-          <img src="./assets/image/others/img1.jpg" alt="" />
-        </div>
-        <div class="slider_item">
-          <img src="./assets/image/others/img2.jpg" alt="" />
-        </div>
+    </div>
+    <div class="sliders containers">
+      <div class="slider_item">
+        <img src="./assets/image/others/img1.jpg" alt="" />
+      </div>
+      <div class="slider_item">
+        <img src="./assets/image/others/img2.jpg" alt="" />
+      </div>
+      <div class="slider_item">
+        <img src="./assets/image/others/img1.jpg" alt="" />
+      </div>
+      <div class="slider_item">
+        <img src="./assets/image/others/img2.jpg" alt="" />
       </div>
     </div>
-    <!-- International Packages SLider  Ends -->
+  </div>
+  <!-- International Packages SLider  Ends -->
 
-    <!-- Indian Packages SLider  -->
-    <div class="packages_sliders indian pack">
-      <h4>Indian Packages</h4>
-      <div class="sliders">
-        <div class="slider_item">
-          <img src="./assets/image/others/img1.jpg" alt="" />
-        </div>
-        <div class="slider_item">
-          <img src="./assets/image/others/img2.jpg" alt="" />
-        </div>
-        <div class="slider_item">
-          <img src="./assets/image/others/img1.jpg" alt="" />
-        </div>
-        <div class="slider_item">
-          <img src="./assets/image/others/img2.jpg" alt="" />
-        </div>
+  <!-- Indian Packages SLider  -->
+  <div class="packages_sliders indian pack">
+    <div class="containers">
+      <h4>Best Selling India Holiday Packages</h4>
+    </div>
+    <div class="sliders containers indian__container">
+      <div class="slider_item">
+        <img src="./assets/image/others/img1.jpg" alt="" />
+      </div>
+      <div class="slider_item">
+        <img src="./assets/image/others/img2.jpg" alt="" />
+      </div>
+      <div class="slider_item">
+        <img src="./assets/image/others/img1.jpg" alt="" />
+      </div>
+      <div class="slider_item">
+        <img src="./assets/image/others/img2.jpg" alt="" />
       </div>
     </div>
-    <!-- Indian Packages SLider  Ends -->
+  </div>
+  <!-- Indian Packages SLider  Ends -->
 
-    <!-- Holidays Packages SLider  -->
-    <div class="packages_sliders holidays pack">
-      <h4>Holidays Packages</h4>
-      <div class="sliders">
-        <div class="slider_item">
-          <img src="./assets/image/others/img1.jpg" alt="" />
-        </div>
-        <div class="slider_item">
-          <img src="./assets/image/others/img2.jpg" alt="" />
-        </div>
-        <div class="slider_item">
-          <img src="./assets/image/others/img1.jpg" alt="" />
-        </div>
-        <div class="slider_item">
-          <img src="./assets/image/others/img2.jpg" alt="" />
-        </div>
+  <!-- Holidays Packages SLider  -->
+  <div class="packages_sliders holidays pack">
+    <div class="containers">
+      <h4>Best Selling International Holiday Packages</h4>
+    </div>
+    <div class="sliders containers">
+      <div class="slider_item">
+        <img src="./assets/image/others/img1.jpg" alt="" />
+      </div>
+      <div class="slider_item">
+        <img src="./assets/image/others/img2.jpg" alt="" />
+      </div>
+      <div class="slider_item">
+        <img src="./assets/image/others/img1.jpg" alt="" />
+      </div>
+      <div class="slider_item">
+        <img src="./assets/image/others/img2.jpg" alt="" />
       </div>
     </div>
-    <!-- Holidays Packages SLider  Ends -->
+  </div>
+  <!-- Holidays Packages SLider  Ends -->
 
-    <!-- Honeymoon Packages SLider  -->
-    <div class="packages_sliders honeymoon pack">
+  <!-- Honeymoon Packages SLider  -->
+  <div class="packages_sliders honeymoon pack">
+    <div class="containers">
       <h4>Honeymoon Packages</h4>
-      <div class="sliders">
-        <div class="slider_item">
-          <img src="./assets/image/others/img1.jpg" alt="" />
-        </div>
-        <div class="slider_item">
-          <img src="./assets/image/others/img2.jpg" alt="" />
-        </div>
-        <div class="slider_item">
-          <img src="./assets/image/others/img1.jpg" alt="" />
-        </div>
-        <div class="slider_item">
-          <img src="./assets/image/others/img2.jpg" alt="" />
-        </div>
+    </div>
+    <div class="sliders containers honeymoon__container">
+      <div class="slider_item">
+        <img src="./assets/image/others/img1.jpg" alt="" />
+      </div>
+      <div class="slider_item">
+        <img src="./assets/image/others/img2.jpg" alt="" />
+      </div>
+      <div class="slider_item">
+        <img src="./assets/image/others/img1.jpg" alt="" />
+      </div>
+      <div class="slider_item">
+        <img src="./assets/image/others/img2.jpg" alt="" />
       </div>
     </div>
-    <!-- Honeymoon Packages SLider  Ends -->
+  </div>
+  <!-- Honeymoon Packages SLider  Ends -->
 
-    <!-- Best Selling International Packages-->
-    <div class="packages_sliders best__internatinal pack">
-      <h4>Best Selling International Packages</h4>
-      <div class="sliders">
-        <div class="slider_item">
-          <img src="./assets/image/others/img1.jpg" alt="" />
-        </div>
-        <div class="slider_item">
-          <img src="./assets/image/others/img2.jpg" alt="" />
-        </div>
-        <div class="slider_item">
-          <img src="./assets/image/others/img1.jpg" alt="" />
-        </div>
-        <div class="slider_item">
-          <img src="./assets/image/others/img2.jpg" alt="" />
-        </div>
-      </div>
-    </div>
-    <!-- Best Selling International Packages Ends -->
 
-    <!-- Best Selling Indain Packages-->
-    <div class="packages_sliders best__indian pack">
-      <h4>Best Selling Indian Packages</h4>
-      <div class="sliders">
-        <div class="slider_item">
-          <img src="./assets/image/others/img1.jpg" alt="" />
-        </div>
-        <div  class="slider_item">
-          <img src="./assets/image/others/img2.jpg" alt="" />
-        </div>
-        <div class="slider_item">
-          <img src="./assets/image/others/img1.jpg" alt="" />
-        </div>
-        <div class="slider_item">
-          <img src="./assets/image/others/img2.jpg" alt="" />
-        </div>
-      </div>
-    </div>
-    <!-- Best Selling Indain Packages Ends-->
+  <!-- Best Slider Containers -->
 
-    <!-- Best Selling Honeymoon  Packages-->
-    <div class="packages_sliders best__honeymoon pack">
-      <h4>Best Selling Indian Packages</h4>
-      <div class="sliders">
-        <div class="slider_item">
-          <img src="./assets/image/others/img1.jpg" alt="" />
-        </div>
-        <div  class="slider_item">
-          <img src="./assets/image/others/img2.jpg" alt="" />
-        </div>
-        <div class="slider_item">
-          <img src="./assets/image/others/img1.jpg" alt="" />
-        </div>
-        <div class="slider_item">
-          <img src="./assets/image/others/img2.jpg" alt="" />
-        </div>
-      </div>
-    </div>
-    <!-- Best Selling Honeymoon Packages Ends-->
+  <section class="best__packages">
+    <div class="containers">
+      <div class="row holidays_ideas">
+        <div class="col-6">
+          <h6>Holiday Ideas</h6>
 
-    <div class="footer__packages">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-3">
-            <h6>Indian Packages</h6>
-            <div class="packages__footer__list">
-              <a href="javascript:void(0)">Goa Tour Package</a>
-              <a href="javascript:void(0)">Goa Tour Package</a>
-              <a href="javascript:void(0)">Goa Tour Package</a>
-              <a href="javascript:void(0)">Goa Tour Package</a>
-              <a href="javascript:void(0)">Goa Tour Package</a>
-              <a href="javascript:void(0)">Goa Tour Package</a>
-              <a href="javascript:void(0)">Goa Tour Package</a>
+          <div class="row">
+
+            <div class="col-3">
+              <div class="best__img__div">
+                <img src="./assets/image/others/img1.jpg" alt="">
+                <p>Dubai</p>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="best__img__div">
+                <img src="./assets/image/others/img1.jpg" alt="">
+                <p>Dubai</p>
+              </div>
+            </div>
+
+
+
+            <div class="col-3">
+              <div class="best__img__div">
+                <img src="./assets/image/others/img1.jpg" alt="">
+                <p>Dubai</p>
+              </div>
+            </div>
+
+
+            <div class="col-3">
+              <div class="best__img__div">
+                <img src="./assets/image/others/img1.jpg" alt="">
+                <p>Dubai</p>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-3">
+              <div class="best__img__div">
+                <img src="./assets/image/others/img1.jpg" alt="">
+                <p>Dubai</p>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="best__img__div">
+                <img src="./assets/image/others/img1.jpg" alt="">
+                <p>Dubai</p>
+              </div>
+            </div>
+
+
+
+            <div class="col-3">
+              <div class="best__img__div">
+                <img src="./assets/image/others/img1.jpg" alt="">
+                <p>Dubai</p>
+              </div>
+            </div>
+
+
+            <div class="col-3">
+              <div class="best__img__div">
+                <img src="./assets/image/others/img1.jpg" alt="">
+                <p>Dubai</p>
+              </div>
+            </div>
+
+
+          </div>
+
+
+          <div class="row">
+
+            <div class="col-3">
+              <div class="best__img__div">
+                <img src="./assets/image/others/img1.jpg" alt="">
+                <p>Dubai</p>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="best__img__div">
+                <img src="./assets/image/others/img1.jpg" alt="">
+                <p>Dubai</p>
+              </div>
+            </div>
+
+
+
+            <div class="col-3">
+              <div class="best__img__div">
+                <img src="./assets/image/others/img1.jpg" alt="">
+                <p>Dubai</p>
+              </div>
+            </div>
+
+
+            <div class="col-3">
+              <div class="best__img__div">
+                <img src="./assets/image/others/img1.jpg" alt="">
+                <p>Dubai</p>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+        <div class="col-6">
+          <h6>Holiday Tour Packages</h6>
+          <div class="row">
+
+            <div class="col-12">
+              <div class="img__wrapper">
+                <div class="img__area col-5">
+                  <img src="./assets/image/others/img2.jpg" alt="">
+                </div>
+                <div class="img__info col-7">
+                  <div class="img__info__header">
+                    <h6>Title</h6>
+                  </div>
+                  <div class="img__info__des">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum deserunt praesentium error
+                      ullam, quaerat provident quibusdam ex distinctio at ipsum vel ipsam odio quo tempora magnam sequi.
+                      Voluptatum laboriosam omnis cum dignissimos, error illo tempore ducimus mollitia neque possimus
+                      quo aspernatur itaque repellat, accusantium cupiditate quaerat debitis nihil consectetur. Aperiam!
+                    </p>
+                  </div>
+                  <div class="img__other__info">
+                    <p>6 Nights</p>
+                    <h5>&#8377;40,000</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="img__wrapper">
+                <div class="img__area col-5">
+                  <img src="./assets/image/others/img2.jpg" alt="">
+                </div>
+                <div class="img__info col-7">
+                  <div class="img__info__header">
+                    <h6>Title</h6>
+                  </div>
+                  <div class="img__info__des">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum deserunt praesentium error
+                      ullam, quaerat provident quibusdam ex distinctio at ipsum vel ipsam odio quo tempora magnam sequi.
+                      Voluptatum laboriosam omnis cum dignissimos, error illo tempore ducimus mollitia neque possimus
+                      quo aspernatur itaque repellat, accusantium cupiditate quaerat debitis nihil consectetur. Aperiam!
+                    </p>
+                  </div>
+                  <div class="img__other__info">
+                    <p>6 Nights</p>
+                    <h5>&#8377;40,000</h5>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="col-sm-3">
-            <h6>International Packages</h6>
-            <div class="packages__footer__list">
-              <a href="javascript:void(0)">Goa Tour Package</a>
-              <a href="javascript:void(0)">Goa Tour Package</a>
-              <a href="javascript:void(0)">Goa Tour Package</a>
-              <a href="javascript:void(0)">Goa Tour Package</a>
-              <a href="javascript:void(0)">Goa Tour Package</a>
-              <a href="javascript:void(0)">Goa Tour Package</a>
-              <a href="javascript:void(0)">Goa Tour Package</a>
-            </div>
-          </div>
+        </div>
 
-          <div class="col-sm-3">
-            <h6>Holiday Packages</h6>
-            <div class="packages__footer__list">
-              <a href="javascript:void(0)">Goa Tour Package</a>
-              <a href="javascript:void(0)">Goa Tour Package</a>
-              <a href="javascript:void(0)">Goa Tour Package</a>
-              <a href="javascript:void(0)">Goa Tour Package</a>
-              <a href="javascript:void(0)">Goa Tour Package</a>
-              <a href="javascript:void(0)">Goa Tour Package</a>
-              <a href="javascript:void(0)">Goa Tour Package</a>
-            </div>
-          </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="col-sm-3">
-            <h6>Honeymoon Packages</h6>
-            <div class="packages__footer__list">
-              <a href="javascript:void(0)">Goa Tour Package</a>
-              <a href="javascript:void(0)">Goa Tour Package</a>
-              <a href="javascript:void(0)">Goa Tour Package</a>
-              <a href="javascript:void(0)">Goa Tour Package</a>
-              <a href="javascript:void(0)">Goa Tour Package</a>
-              <a href="javascript:void(0)">Goa Tour Package</a>
-              <a href="javascript:void(0)">Goa Tour Package</a>
-            </div>
+  <!-- Best Slider Containers Ends -->
+
+
+
+
+  <div class="footer__packages">
+    <div class="containers">
+      <div class="row">
+        <div class="col-sm-3">
+          <h6>Indian Packages</h6>
+          <div class="packages__footer__list">
+            <a href="javascript:void(0)">Goa Tour Package</a>
+            <a href="javascript:void(0)">Goa Tour Package</a>
+            <a href="javascript:void(0)">Goa Tour Package</a>
+            <a href="javascript:void(0)">Goa Tour Package</a>
+            <a href="javascript:void(0)">Goa Tour Package</a>
+            <a href="javascript:void(0)">Goa Tour Package</a>
+            <a href="javascript:void(0)">Goa Tour Package</a>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <h6>International Packages</h6>
+          <div class="packages__footer__list">
+            <a href="javascript:void(0)">Goa Tour Package</a>
+            <a href="javascript:void(0)">Goa Tour Package</a>
+            <a href="javascript:void(0)">Goa Tour Package</a>
+            <a href="javascript:void(0)">Goa Tour Package</a>
+            <a href="javascript:void(0)">Goa Tour Package</a>
+            <a href="javascript:void(0)">Goa Tour Package</a>
+            <a href="javascript:void(0)">Goa Tour Package</a>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <h6>Holiday Packages</h6>
+          <div class="packages__footer__list">
+            <a href="javascript:void(0)">Goa Tour Package</a>
+            <a href="javascript:void(0)">Goa Tour Package</a>
+            <a href="javascript:void(0)">Goa Tour Package</a>
+            <a href="javascript:void(0)">Goa Tour Package</a>
+            <a href="javascript:void(0)">Goa Tour Package</a>
+            <a href="javascript:void(0)">Goa Tour Package</a>
+            <a href="javascript:void(0)">Goa Tour Package</a>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <h6>Honeymoon Packages</h6>
+          <div class="packages__footer__list">
+            <a href="javascript:void(0)">Goa Tour Package</a>
+            <a href="javascript:void(0)">Goa Tour Package</a>
+            <a href="javascript:void(0)">Goa Tour Package</a>
+            <a href="javascript:void(0)">Goa Tour Package</a>
+            <a href="javascript:void(0)">Goa Tour Package</a>
+            <a href="javascript:void(0)">Goa Tour Package</a>
+            <a href="javascript:void(0)">Goa Tour Package</a>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="second__footer">
+  <div class="second__footer">
+    <div class="containers">
       <div class="footer__about">
         <h6>About Tourish Tour</h6>
         <p>
@@ -393,22 +497,16 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="pages__footer">
+    <div class="pages__footer">
+      <div class="containers">
         <div class="row">
           <div class="col-3 call_div">
-            <a
-              href="javascript:void(0)"
-              type="button"
-              class="btn btn-outline-success"
-              ><i class="fab fa-whatsapp"></i> Connect us on Whats App</a
-            >
-            <a
-              href="javascript:void(0)"
-              type="button"
-              class="btn btn-outline-success"
-              ><i class="fab fa-whatsapp"></i> View Deals on Whats App</a
-            >
+            <a href="javascript:void(0)" type="button" class="btn btn-outline-danger"><i class="fab fa-whatsapp"></i>
+              Connect us on Whats App</a>
+            <a href="javascript:void(0)" type="button" class="btn btn-outline-danger"><i class="fab fa-whatsapp"></i>
+              View Deals on Whats App</a>
           </div>
 
           <div class="col-3 page__links">
@@ -430,15 +528,17 @@
         </div>
       </div>
     </div>
-    <div class="copyright">
-      <h6>Coptight &copy; 2021 Tourish Tour. All right reserved.</h6>
-    </div>
+  </div>
+  <div class="copyright">
+    <h6>Coptight &copy; 2021 Tourish Tour. All right reserved.</h6>
+  </div>
 
-    <script defer src="./assets/plugins/js/jquery.min.js"></script>
-    <script defer src="./assets/plugins/js/popper.min.js"></script>
-    <script defer src="./assets/plugins/js/bootstrap.min.js"></script>
-    <script defer src="./assets/plugins/js/slick.min.js"></script>
-    <script defer src="./assets/plugins/fontawesome/js/all.js"></script>
-    <script defer src="./assets/js/main.js"></script>
-  </body>
+  <script defer src="./assets/plugins/js/jquery.min.js"></script>
+  <script defer src="./assets/plugins/js/popper.min.js"></script>
+  <script defer src="./assets/plugins/js/bootstrap.min.js"></script>
+  <script defer src="./assets/plugins/js/slick.min.js"></script>
+  <script defer src="./assets/plugins/fontawesome/js/all.js"></script>
+  <script defer src="./assets/js/main.js"></script>
+</body>
+
 </html>

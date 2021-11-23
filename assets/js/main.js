@@ -10,5 +10,8 @@ $(document).ready(function () {
   });
   // SLick SLiders js Ends
 
+  document.getElementById('banner__video').play();
+
+
   //document Ready Ends
 });
