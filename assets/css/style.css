@@ -113,7 +113,7 @@ textarea:focus-visible {
   --max-with: 1140px;
   --font-size: 16px;
   --heading: 32px;
-  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.15);
   --accent: #ff1a46;
   --accent-hover: #d10c34;
 }
@@ -137,7 +137,6 @@ textarea:focus-visible {
   align-items: center;
   padding: 0 1rem;
 }
-
 
 .nav__brand img {
   width: 100%;
@@ -223,7 +222,7 @@ textarea:focus-visible {
   font-size: 0.9rem;
   font-family: var(--font-family-para);
   color: var(--gray);
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .destionation__package__listing {
@@ -329,13 +328,19 @@ textarea:focus-visible {
   box-shadow: var(--box-shadow);
 }
 
+.similar__package__section {
+  width: 100%;
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+}
+
 .similar__heading {
   width: 100%;
   box-sizing: border-box;
   border-bottom: 1px solid var(--border-color);
 }
 
-.similar__section__section h6 {
+.similar__heading h6 {
   font-size: 1.3rem;
   font-family: var(--font-family-para);
   color: var(--gray);
@@ -363,18 +368,18 @@ textarea:focus-visible {
   text-decoration: underline;
 }
 
-
-
 /* Package Page  */
 
 /* Pacakge Slider  */
 
-.packages_carousel {
-  width: 100%;
-  padding: 60px 0;
-  box-sizing: border-box;
+.overview {
+  margin: 2rem 0;
 }
 
+.packages_carousel {
+  width: 100%;
+  box-sizing: border-box;
+}
 
 .pack_sliders {
   width: 100%;
@@ -386,12 +391,10 @@ textarea:focus-visible {
 
 .pack_sliders div img {
   width: 100%;
-  height: auto;
   display: block;
   object-fit: cover;
-  object-position: top;
+  object-position: center;
 }
-
 
 .slick-arrow {
   width: 45px;
@@ -441,7 +444,186 @@ textarea:focus-visible {
   z-index: 3;
 }
 
+.package__detail__section {
+  width: 100%;
+  background: #fafbfe;
+  box-shadow: var(--box-shadow);
+}
 
+.package__detail__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.package__details__information {
+  padding: 1.5rem 1rem;
+  box-sizing: border-box;
+}
+
+.package__details__information h6 {
+  color: var(--gray);
+  font-size: 1.4rem;
+  font-family: var(--font-family-para);
+}
+
+.package__details__information p {
+  color: var(--gray);
+  font-size: 0.8rem;
+  font-family: var(--font-family-para);
+}
+
+.slider_item {
+  margin: 0 8px;
+}
+
+.packages__overview {
+  width: 100%;
+  margin: 2rem 0;
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.packages__overview h6 {
+  color: #222;
+  font-size: 1.4rem;
+  font-family: var(--font-family-para);
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.packages__overview h6::after,
+.inclusion h6::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 8%;
+  height: 2px;
+  background: dodgerblue;
+}
+
+.exlusion h6::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 8%;
+  height: 2px;
+  background: red;
+}
+
+.packages__overview p {
+  color: var(--gray);
+  font-size: 0.8rem;
+  font-family: var(--font-family-para);
+}
+
+.inclusion__exclusion__container {
+  width: 100%;
+  margin: 2rem 0;
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.inclusion h6,
+.exlusion h6 {
+  color: #222;
+  font-size: 1.4rem;
+  font-family: var(--font-family-para);
+  margin-bottom: 1.6rem;
+  position: relative;
+}
+
+.inclusion__points p,
+.exlusion_points p {
+  color: var(--gray);
+  font-size: 13px;
+  font-family: var(--font-family-para);
+  margin: 1rem 0 1rem 1.5rem;
+  position: relative;
+}
+
+.inclusion p::before {
+  content: "\f061";
+  position: absolute;
+  top: 2px;
+  left: -20px;
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  color: #50b154;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.exlusion p::before {
+  content: "\f061";
+  position: absolute;
+  top: 2px;
+  left: -20px;
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  color: red;
+  font-weight: bold;
+}
+
+.document__section,
+.terms__section,
+.dayswise__section {
+  width: 100%;
+  margin: 2rem 0;
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.document__section h6,
+.terms__section h6,
+.dayswise__section h6 {
+  color: #222;
+  font-size: 1.4rem;
+  font-family: var(--font-family-para);
+  margin-bottom: 1.6rem;
+  position: relative;
+}
+
+.document__section h6::after,
+.terms__section h6::after,
+.dayswise__section h6::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 8%;
+  height: 2px;
+  background: dodgerblue;
+}
+
+.document__data p,
+.terms__section p {
+  color: var(--gray);
+  font-size: 14px;
+  font-family: var(--font-family-para);
+  margin: 1rem 0 1rem 1.5rem;
+  position: relative;
+}
+
+.document__data p::after,
+.terms__section p::after {
+  content: "\f061";
+  position: absolute;
+  top: 2px;
+  left: -20px;
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  color: #50b154;
+  font-weight: bold;
+}
 
 /* Second Footer */
 
@@ -613,4 +795,42 @@ textarea:focus-visible {
   .containers {
     max-width: 1470px !important;
   }
+}
+
+/* About us page  */
+.about__section {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.about__container {
+  width: 100%;
+  background: #fff;
+  padding: 1rem;
+  box-shadow: var(--box-shadow);
+}
+
+.about__container h5 {
+  color: #222;
+  font-size: 1.4rem;
+  font-family: var(--font-family-para);
+  margin-bottom: 1.6rem;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.about__container h5::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 8%;
+  height: 2px;
+  background: var(--accent);
+}
+
+.about__container p {
+  color: var(--gray);
+  font-size: 14px;
+  font-family: var(--font-family-para);
 }

@@ -108,6 +108,7 @@ textarea:focus-visible {
   --black: #000;
   --gray: #505050;
   --border-color: #e1e1e1;
+  --border-color2: #f0f0f0;
   --font-family-heading: "Josefin Sans", sans-serif;
   --font-family-satify: "Satisfy", cursive;
   --font-family-para: "Poppins", sans-serif;
@@ -152,7 +153,6 @@ textarea:focus-visible {
   align-items: center;
   padding: 0 1rem;
 }
-
 
 .nav__brand img {
   width: 100%;
@@ -244,6 +244,11 @@ textarea:focus-visible {
   background-color: var(--accent);
   transition: 300ms ease-in;
   color: #fff;
+  outline: none;
+}
+
+.btn-accent:focus {
+  outline: none;
 }
 
 .btn-accent:hover {
@@ -290,7 +295,7 @@ textarea:focus-visible {
   align-items: center;
 }
 
-.package__type__container .media img{
+.package__type__container .media img {
   width: 100%;
   max-width: 45px;
   height: auto;
@@ -358,7 +363,7 @@ textarea:focus-visible {
 
 .honeymoon__container div img,
 .indian__container div img {
-  height: 400px;
+  height: 250px;
 }
 
 .honeymoon h4 {
@@ -502,10 +507,10 @@ textarea:focus-visible {
 .img__info__header {
   padding: 1rem;
   box-sizing: border-box;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color2);
 }
 
-.img__info__des {
+/* .img__info__des {
   padding: 1rem;
   box-sizing: border-box;
   flex: auto;
@@ -515,8 +520,8 @@ textarea:focus-visible {
 .img__info__des p {
   font-weight: 500;
   font-family: var(--font-family-para);
-  color: var(--gray);
-}
+  color: dodgerblue;
+} */
 
 .img__info__header h6 {
   font-size: 1.2rem;
@@ -531,7 +536,21 @@ textarea:focus-visible {
   align-items: center;
   padding: 1rem;
   box-sizing: border-box;
-  border-top: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color2);
+}
+
+.img__other__info p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: dodgerblue;
+  font-family: var(--font-family-para);
+}
+
+.img__other__info h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: dodgerblue;
+  font-family: var(--font-family-para);
 }
 
 /* Footer  */
@@ -779,4 +798,11 @@ textarea:focus-visible {
   .header::after {
     height: 800px;
   }
+}
+
+#contact__modal {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
 }

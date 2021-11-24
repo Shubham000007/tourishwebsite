@@ -29,7 +29,7 @@
         <!-- BRand Logo Ends -->
         <div class="nav__menu">
           <a href="javascript:void(0)" class="text-white"> Blogs </a>
-          <a href="javascript:void(0)" class="btn btn-accent"
+          <a href="javascript:void(0)" class="btn btn-accent contact"
             ><i class="fas fa-phone-alt"></i> Call Us
           </a>
         </div>
@@ -283,14 +283,7 @@
                   </div>
                   <div class="img__info col-7">
                     <div class="img__info__header">
-                      <h6>Title</h6>
-                    </div>
-                    <div class="img__info__des">
-                      <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Nostrum deserunt praesentium error ullam, quaerat
-                        provident quibusdam ex distinctio at ipsum vel ipsam.
-                      </p>
+                      <h6>Goa Tour Pacakge</h6>
                     </div>
                     <div class="img__other__info">
                       <p>6 Nights</p>
@@ -307,14 +300,7 @@
                   </div>
                   <div class="img__info col-7">
                     <div class="img__info__header">
-                      <h6>Title</h6>
-                    </div>
-                    <div class="img__info__des">
-                      <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Nostrum deserunt praesentium error ullam, quaerat
-                        provident quibusdam ex distinctio at ipsum vel ipsam.
-                      </p>
+                      <h6>Goa Tour Pacakge</h6>
                     </div>
                     <div class="img__other__info">
                       <p>6 Nights</p>
@@ -398,7 +384,7 @@
             life? Well, since there isn’t, we are there for you. The universal
             truth is that every person in this universe needs a break at some
             point - A break from the mundane routines.
-            <a href="javascript:void(0)">Read More</a>
+            <a href="about.html"  class="text-primary">Read More</a>
           </p>
         </div>
 
@@ -475,20 +461,20 @@
             </div>
 
             <div class="col-sm-3 page__links">
-              <a href="javascript:void(0)">About Us</a>
+              <a href="about.html">About Us</a>
               <a href="javascript:void(0)">Tourish Tour Offers</a>
             </div>
 
             <div class="col-sm-3 page__links">
               <a href="javascript:void(0)">Enquiry</a>
               <a href="javascript:void(0)">Cotact Us</a>
-              <a href="javascript:void(0)">Feedback</a>
+              <!-- <a href="javascript:void(0)">Feedback</a> -->
             </div>
 
             <div class="col-sm-3 page__links">
-              <a href="javascript:void(0)">Terms & Conditions</a>
-              <a href="javascript:void(0)">Bank Account Details</a>
-              <a href="javascript:void(0)">Document Required</a>
+              <a href="terms.html">Terms & Conditions</a>
+              <!-- <a href="javascript:void(0)">Bank Account Details</a>   -->
+              <a href="document.html">Document Required</a>
             </div>
           </div>
         </div>
@@ -506,3 +492,66 @@
     <script defer src="./assets/js/main.js"></script>
   </body>
 </html>
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="contact__modal"
+  tabindex="-1"
+  aria-labelledby="contact__modal_label"
+  aria-hidden="true"
+  data-toggle="modal"
+  data-backdrop="static"
+  data-keyboard="false"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contact__modal_label">Contact us</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="">Name</label>
+          <input type="text" class="form-control name" />
+          <div class="error" id="name_error"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="">Email</label>
+          <input type="email" class="form-control email" />
+          <div class="error" id="email_error"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="">Mobile Number</label>
+          <input type="number" class="form-control mobile_number" />
+          <div class="error" id="mobile_number_error"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="">Message</label>
+          <textarea
+            name="message"
+            class="form-control message"
+            id="message"
+            cols="30"
+            rows="5"
+          ></textarea>
+          <div class="error" id="message_error"></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary add__contact">
+          Save changes
+        </button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
