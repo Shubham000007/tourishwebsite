@@ -467,7 +467,7 @@ textarea:focus-visible {
   font-size: 1rem;
   font-weight: bold;
   font-family: var(--font-family-para);
-  padding: 1rem;
+  padding: .5rem 1rem;
   text-align: center;
   color: var(--black);
 }
@@ -540,16 +540,16 @@ textarea:focus-visible {
 }
 
 .img__other__info p {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: bold;
-  color: dodgerblue;
+  color: #696969;
   font-family: var(--font-family-para);
 }
 
 .img__other__info h5 {
   font-size: 1.2rem;
   font-weight: bold;
-  color: dodgerblue;
+  color: var(--accent);
   font-family: var(--font-family-para);
 }
 
