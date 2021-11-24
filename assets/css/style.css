@@ -210,6 +210,7 @@ textarea:focus-visible {
   color: var(--accent);
   font-weight: bold;
 }
+
 .package__over__ccntainer h6 {
   font-size: var(--font-size);
   font-family: var(--font-family-para);
@@ -217,6 +218,7 @@ textarea:focus-visible {
   margin-top: 1rem;
   font-weight: 500;
 }
+
 .package__over__ccntainer p {
   font-size: 0.9rem;
   font-family: var(--font-family-para);
@@ -314,6 +316,7 @@ textarea:focus-visible {
   color: var(--gray);
   font-weight: 700;
 }
+
 .view__button {
   padding: 0 1rem;
   box-sizing: border-box;
@@ -359,6 +362,86 @@ textarea:focus-visible {
   color: var(--accent-hover);
   text-decoration: underline;
 }
+
+
+
+/* Package Page  */
+
+/* Pacakge Slider  */
+
+.packages_carousel {
+  width: 100%;
+  padding: 60px 0;
+  box-sizing: border-box;
+}
+
+
+.pack_sliders {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.pack_sliders div img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  object-position: top;
+}
+
+
+.slick-arrow {
+  width: 45px;
+  height: 45px;
+  align-content: center;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  padding: 0.5rem;
+  box-sizing: border-box;
+  position: relative;
+  background: var(--white);
+  border-radius: 100%;
+}
+
+.slick-arrow svg {
+  font-size: 1rem;
+}
+
+.package_slider_item {
+  margin: 0 8px;
+  box-shadow: 4px 4px 10px rgb(0 0 0 / 20%);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.slick-list.draggable {
+  padding-bottom: 24px;
+}
+
+.pack .slick-list {
+  margin: 0 -8px;
+}
+
+.caret-left {
+  position: absolute;
+  left: -20px;
+  z-index: 3;
+}
+
+.caret-right {
+  position: absolute;
+  align-self: center;
+  right: -20px;
+  z-index: 3;
+}
+
+
 
 /* Second Footer */
 
