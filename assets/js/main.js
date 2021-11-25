@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  // SLick SLiders js
+  // SLick SLiders js for internationa
   $(".sliders").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -35,6 +35,122 @@ $(document).ready(function () {
       },
     ]
   });
+
+
+  // For indian
+  $(".indian__container").slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    prevArrow:
+      '<div class="caret-left"><i class="fas fa-arrow-left"></i></div>',
+    nextArrow:
+      '<div class="caret-right"><i class="fas fa-arrow-right"></i></div>',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ]
+  });
+
+
+
+  // For Honey moon
+  $(".holidays__container").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    prevArrow:
+      '<div class="caret-left"><i class="fas fa-arrow-left"></i></div>',
+    nextArrow:
+      '<div class="caret-right"><i class="fas fa-arrow-right"></i></div>',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ]
+  });
+
+
+  // For Honey moon
+  $(".honeymoon__container").slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    prevArrow:
+      '<div class="caret-left"><i class="fas fa-arrow-left"></i></div>',
+    nextArrow:
+      '<div class="caret-right"><i class="fas fa-arrow-right"></i></div>',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ]
+  });
+
 
   $(".pack_sliders").slick({
     slidesToShow: 1,
